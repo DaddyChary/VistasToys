@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            margin-top: 56px; /* Add top margin to avoid content being hidden behind the fixed navbar */
+        }
+
+        .footer {
+            background-color: #282828;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 20px;
+        }
+
+        .footer-section h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 10px 0;
+        }
+
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .social-icons a:hover {
+            color: #ff6347;
+        }
+
+        .footer-bottom {
+            background-color: #202020;
+            padding: 20px 0;
+            text-align: center;
+            color: #cccccc;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 2px solid;
+            border-radius: 10px;
+            background: linear-gradient(145deg, #ffffff, #e6e6e6);
+            box-shadow: 5px 5px 15px #aaaaaa, -5px -5px 15px #ffffff;
+        }
+
+        .footer h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer .list-inline-item {
+            margin-right: 1rem;
+        }
+
+        .footer .footer-bottom {
+            background-color: #343a40;
+        }
+
+        .footer .footer-container {
+            padding: 2rem 0;
+        }
+
+        .footer .footer-section {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="InventarioTabla.html">Ver Inventario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">Agregar Inventario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CrudCompleto.html">Extra</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2>Formulario para Items</h2>
+        <form>
+            <div class="mb-3">
+                <label for="id_juguete_fk_add" class="form-label">ID Juguete</label>
+                <input type="number" class="form-control" id="id_juguete_fk_add" name="id_juguete_fk"
+                    placeholder="Ingrese el ID del juguete">
+            </div>
+            <div class="mb-3">
+                <label for="cantidad_add" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="cantidad_add" name="cantidad"
+                    placeholder="Ingrese la cantidad">
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                Agregar
+            </button>
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editModal">
+                Editar
+            </button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                Eliminar
+            </button>
+        </form>
+    </div>
+
+    <!-- Modales para Editar y Eliminar Item -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Editar Item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="edit_id_juguete_fk" class="form-label">ID Juguete</label>
+                            <input type="number" class="form-control" id="edit_id_juguete_fk" name="id_juguete_fk">
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit_cantidad" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="edit_cantidad" name="cantidad">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Eliminar Item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Está seguro de que desea eliminar este item?</p>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer class="footer mt-5">
+        <div class="footer-container">
+            <div class="col-md-4 mb-4">
+                <h4>Enlaces Rápidos</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Inicio</a></li>
+                    <li><a href="#" class="text-white">About</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4>Información de Contacto</h4>
+                <ul class="list-unstyled">
+                    <li>Teléfono: +569 3105 2705</li>
+                    <li>Email: infgam247@gmail.com</li>
+                    <li>Dirección: SantoTomás</li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <h4>Síguenos</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a
+                            href="https://github.com/DaddyChary" target="_blank"
+                            class="text-white">GitHub</a></li>
+                    <li class="list-inline-item"><a
+                            href="https://x.com/DaddyChary_" target="_blank"
+                            class="text-white">Twitter</a></li>
+                    <li class="list-inline-item"><a
+                            href="https://www.instagram.com/gamaliel_moya/"
+                            target="_blank"
+                            class="text-white">Instagram</a></li>
+                    <li class="list-inline-item"><a
+                            href="https://www.linkedin.com/in/gamaliel-moya-88b682300/"
+                            target="_blank" class="text-white">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Chary.cl Todos los derechos reservados.
+        </div>
+    </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
