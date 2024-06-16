@@ -116,12 +116,12 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="InventarioTabla.html">Ver
-                                Inventario</a>
+                            <a class="nav-link" href="juguetesTabla.html">Ver
+                                Juguetes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="formulario.html">Agregar
-                                Inventario</a>
+                                Juguetes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
@@ -137,7 +137,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5">
             <h2>Items</h2>
             <div class="row mb-3">
                 <div class="col-md-8">
@@ -147,7 +147,7 @@
                 <div class="col-md-4 text-end">
                     <button type="button" class="btn btn-primary"
                         data-bs-toggle="modal"
-                        data-bs-target="#addModal">Agregar Item</button>
+                        data-bs-target="#addModal">Agregar Juguete</button>
                 </div>
             </div>
             <div class="row">
@@ -156,198 +156,25 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">ID Juguete</th>
-                                <th scope="col">Cantidad</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">ID Categoría</th>
+                                <th scope="col">ID Marca</th>
+                                <th scope="col">ID Proveedor</th>
                                 <th scope="col">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <!-- Filas de ejemplo -->
+                            <!-- Ejemplo 1 -->
                             <tr>
                                 <td>1</td>
+                                <td>Woddy</td>
+                                <td>Juguete que no habla</td>
+                                <td>30000</td>
                                 <td>1</td>
-                                <td>10</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>5</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>8</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>4</td>
-                                <td>12</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>5</td>
-                                <td>7</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>6</td>
-                                <td>15</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>7</td>
-                                <td>3</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>9</td>
-                                <td>6</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>11</td>
-                                <td>11</td>
-                                <td>4</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>12</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>13</td>
-                                <td>13</td>
-                                <td>2</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>14</td>
-                                <td>14</td>
-                                <td>14</td>
-                                <td>
-                                    <button type="button"
-                                        class="btn btn-warning btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#editModal">Editar</button>
-                                    <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>15</td>
-                                <td>15</td>
+                                <td>1</td>
                                 <td>1</td>
                                 <td>
                                     <button type="button"
@@ -355,20 +182,169 @@
                                         data-bs-toggle="modal"
                                         data-bs-target="#editModal">Editar</button>
                                     <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
+                                        class="btn btn-danger btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal">Eliminar</button>
                                 </td>
                             </tr>
+                            <!-- Ejemplo 2 -->
                             <tr>
-                                <td>16</td>
-                                <td>16</td>
-                                <td>20</td>
+                                <td>2</td>
+                                <td>Buzz Lightyear</td>
+                                <td>Figura de acción con frases</td>
+                                <td>45000</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
                                 <td>
                                     <button type="button"
                                         class="btn btn-warning btn-sm"
                                         data-bs-toggle="modal"
                                         data-bs-target="#editModal">Editar</button>
                                     <button type="button"
-                                        class="btn btn-danger btn-sm">Eliminar</button>
+                                        class="btn btn-danger btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal">Eliminar</button>
+                                </td>
+                            </tr>
+                            <!-- Ejemplo 3 -->
+                            <tr>
+                                <td>3</td>
+                                <td>Lego City</td>
+                                <td>Set de construcción urbana</td>
+                                <td>28000</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn-warning btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#editModal">Editar</button>
+                                    <button type="button"
+                                        class="btn btn-danger btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal">Eliminar</button>
+                                </td>
+                            </tr>
+                            <!-- Ejemplo 4 -->
+                            <tr>
+                                <td>4</td>
+                                <td>Barbie Dreamhouse</td>
+                                <td>Casa de muñecas rosa</td>
+                                <td>55000</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn-warning btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#editModal">Editar</button>
+                                    <button type="button"
+                                        class="btn btn-danger btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal">Eliminar</button>
+                                </td>
+                            </tr>
+                            <!-- Ejemplo 5 -->
+                            <tr>
+                                <td>5</td>
+                                <td>Hot Wheels</td>
+                                <td>Paquete de autos de carrera</td>
+                                <td>15000</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn-warning btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#editModal">Editar</button>
+                                    <button type="button"
+                                        class="btn btn-danger btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal">Eliminar</button>
+                                </td>
+                            </tr>
+                            <!-- Ejemplo 6 -->
+                            <tr>
+                                <td>6</td>
+                                <td>Nerf N-Strike</td>
+                                <td>Fusil de dardos</td>
+                                <td>38000</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn-warning btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#editModal">Editar</button>
+                                    <button type="button"
+                                        class="btn btn-danger btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal">Eliminar</button>
+                                </td>
+                            </tr>
+                            <!-- Ejemplo 7 -->
+                            <tr>
+                                <td>7</td>
+                                <td>Play-Doh</td>
+                                <td>Set de modelado de plastilina</td>
+                                <td>25000</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn-warning btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#editModal">Editar</button>
+                                    <button type="button"
+                                        class="btn btn-danger btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal">Eliminar</button>
+                                </td>
+                            </tr>
+                            <!-- Ejemplo 8 -->
+                            <tr>
+                                <td>8</td>
+                                <td>Peluche Panda</td>
+                                <td>Suave y adorable</td>
+                                <td>20000</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn-warning btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#editModal">Editar</button>
+                                    <button type="button"
+                                        class="btn btn-danger btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal">Eliminar</button>
+                                </td>
+                            </tr>
+                            <!-- Ejemplo 9 -->
+                            <tr>
+                                <td>9</td>
+                                <td>Monopoly</td>
+                                <td>Juego de mesa clásico</td>
+                                <td>32000</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn-warning btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#editModal">Editar</button>
+                                    <button type="button"
+                                        class="btn btn-danger btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal">Eliminar</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -376,6 +352,7 @@
                 </div>
             </div>
         </div>
+        <!-- Modal Editar -->
         <div class="modal fade" id="editModal" tabindex="-1"
             aria-labelledby="editModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -389,17 +366,46 @@
                     <div class="modal-body">
                         <form>
                             <div class="mb-3">
-                                <label for="edit_id_juguete_fk"
-                                    class="form-label">ID Juguete</label>
+                                <label for="edit_id"
+                                    class="form-label">ID</label>
                                 <input type="number" class="form-control"
-                                    id="edit_id_juguete_fk"
-                                    name="id_juguete_fk">
+                                    id="edit_id" name="id">
                             </div>
                             <div class="mb-3">
-                                <label for="edit_cantidad"
-                                    class="form-label">Cantidad</label>
+                                <label for="edit_nombre"
+                                    class="form-label">Nombre</label>
+                                <input type="text" class="form-control"
+                                    id="edit_nombre" name="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit_descripcion"
+                                    class="form-label">Descripción</label>
+                                <input type="text" class="form-control"
+                                    id="edit_descripcion" name="descripcion">
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit_precio"
+                                    class="form-label">Precio</label>
                                 <input type="number" class="form-control"
-                                    id="edit_cantidad" name="cantidad">
+                                    id="edit_precio" name="precio">
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit_id_categoria"
+                                    class="form-label">ID Categoría</label>
+                                <input type="number" class="form-control"
+                                    id="edit_id_categoria" name="id_categoria">
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit_id_marca" class="form-label">ID
+                                    Marca</label>
+                                <input type="number" class="form-control"
+                                    id="edit_id_marca" name="id_marca">
+                            </div>
+                            <div class="mb-3">
+                                <label for="edit_id_proveedor"
+                                    class="form-label">ID Proveedor</label>
+                                <input type="number" class="form-control"
+                                    id="edit_id_proveedor" name="id_proveedor">
                             </div>
                             <button type="submit"
                                 class="btn btn-primary">Guardar Cambios</button>
@@ -423,22 +429,73 @@
                     <div class="modal-body">
                         <form>
                             <div class="mb-3">
-                                <label for="id_juguete_fk_add"
-                                    class="form-label">ID Juguete</label>
-                                <input type="number" class="form-control"
-                                    id="id_juguete_fk_add" name="id_juguete_fk"
-                                    placeholder="Ingrese el ID del juguete">
+                                <label for="add_nombre"
+                                    class="form-label">Nombre</label>
+                                <input type="text" class="form-control"
+                                    id="add_nombre" name="nombre"
+                                    placeholder="Ingrese el nombre">
                             </div>
                             <div class="mb-3">
-                                <label for="cantidad_add"
-                                    class="form-label">Cantidad</label>
+                                <label for="add_descripcion"
+                                    class="form-label">Descripción</label>
+                                <input type="text" class="form-control"
+                                    id="add_descripcion" name="descripcion"
+                                    placeholder="Ingrese la descripción">
+                            </div>
+                            <div class="mb-3">
+                                <label for="add_precio"
+                                    class="form-label">Precio</label>
                                 <input type="number" class="form-control"
-                                    id="cantidad_add" name="cantidad"
-                                    placeholder="Ingrese la cantidad">
+                                    id="add_precio" name="precio"
+                                    placeholder="Ingrese el precio">
+                            </div>
+                            <div class="mb-3">
+                                <label for="add_id_categoria"
+                                    class="form-label">ID Categoría</label>
+                                <input type="number" class="form-control"
+                                    id="add_id_categoria" name="id_categoria"
+                                    placeholder="Ingrese el ID de categoría">
+                            </div>
+                            <div class="mb-3">
+                                <label for="add_id_marca" class="form-label">ID
+                                    Marca</label>
+                                <input type="number" class="form-control"
+                                    id="add_id_marca" name="id_marca"
+                                    placeholder="Ingrese el ID de marca">
+                            </div>
+                            <div class="mb-3">
+                                <label for="add_id_proveedor"
+                                    class="form-label">ID Proveedor</label>
+                                <input type="number" class="form-control"
+                                    id="add_id_proveedor" name="id_proveedor"
+                                    placeholder="Ingrese el ID de proveedor">
                             </div>
                             <button type="submit"
                                 class="btn btn-primary">Agregar</button>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal para Eliminar Item -->
+        <div class="modal fade" id="deleteModal" tabindex="-1"
+            aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteModalLabel">Confirmar
+                            Eliminación</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>¿Está seguro que desea eliminar este item?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger"
+                            id="confirmDeleteBtn">Eliminar</button>
                     </div>
                 </div>
             </div>

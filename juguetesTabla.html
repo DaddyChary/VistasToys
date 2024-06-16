@@ -116,16 +116,16 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="InventarioTabla.html">Ver
-                                Inventario</a>
+                            <a class="nav-link" href="juguetesTabla.html">Ver
+                                Juguetes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="formulario.html">Agregar
-                                Inventario</a>
+                                Juguetes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                                href="CrudCompleto.html">Extra</a>
+                                href="crudCompleto.html">Extra</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -137,7 +137,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5">
             <h2>Items</h2>
             <div class="row mb-3">
                 <div class="col-md-8">
@@ -151,91 +151,113 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">ID Juguete</th>
-                                <th scope="col">Cantidad</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">ID Categoría</th>
+                                <th scope="col">ID Marca</th>
+                                <th scope="col">ID Proveedor</th>
                             </tr>
                         </thead>
                         <tbody>
                             <!-- Filas de ejemplo -->
+                            <!-- Ejemplo 1 -->
                             <tr>
                                 <td>1</td>
+                                <td>Woddy</td>
+                                <td>Juguete que no habla</td>
+                                <td>30000</td>
                                 <td>1</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>8</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>4</td>
-                                <td>12</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>5</td>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>6</td>
-                                <td>15</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>7</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>8</td>
-                                <td>9</td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>9</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>10</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>11</td>
-                                <td>11</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>12</td>
-                                <td>12</td>
-                                <td>13</td>
-                            </tr>
-                            <tr>
-                                <td>13</td>
-                                <td>13</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>14</td>
-                                <td>14</td>
-                                <td>14</td>
-                            </tr>
-                            <tr>
-                                <td>15</td>
-                                <td>15</td>
+                                <td>1</td>
                                 <td>1</td>
                             </tr>
+
+                            <!-- Ejemplo 2 -->
                             <tr>
-                                <td>16</td>
-                                <td>16</td>
-                                <td>20</td>
+                                <td>2</td>
+                                <td>Buzz Lightyear</td>
+                                <td>Figura de acción con frases</td>
+                                <td>45000</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+
+                            <!-- Ejemplo 3 -->
+                            <tr>
+                                <td>3</td>
+                                <td>Lego City</td>
+                                <td>Set de construcción urbana</td>
+                                <td>28000</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>1</td>
+                            </tr>
+
+                            <!-- Ejemplo 4 -->
+                            <tr>
+                                <td>4</td>
+                                <td>Barbie Dreamhouse</td>
+                                <td>Casa de muñecas rosa</td>
+                                <td>55000</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+
+                            <!-- Ejemplo 5 -->
+                            <tr>
+                                <td>5</td>
+                                <td>Hot Wheels</td>
+                                <td>Paquete de autos de carrera</td>
+                                <td>15000</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>2</td>
+                            </tr>
+
+                            <!-- Ejemplo 6 -->
+                            <tr>
+                                <td>6</td>
+                                <td>Nerf N-Strike</td>
+                                <td>Fusil de dardos</td>
+                                <td>38000</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+
+                            <!-- Ejemplo 7 -->
+                            <tr>
+                                <td>7</td>
+                                <td>Play-Doh</td>
+                                <td>Set de modelado de plastilina</td>
+                                <td>25000</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+
+                            <!-- Ejemplo 8 -->
+                            <tr>
+                                <td>8</td>
+                                <td>Peluche Panda</td>
+                                <td>Suave y adorable</td>
+                                <td>20000</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                            </tr>
+
+                            <!-- Ejemplo 9 -->
+                            <tr>
+                                <td>9</td>
+                                <td>Monopoly</td>
+                                <td>Juego de mesa clásico</td>
+                                <td>32000</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>2</td>
                             </tr>
                         </tbody>
                     </table>
