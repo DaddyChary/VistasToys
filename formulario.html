@@ -4,18 +4,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            font-family: Arial, sans-serif;
+            min-height: 100vh; /* Asegúrate de que el cuerpo de la página tenga una altura mínima de 100% de la ventana */
         }
-
+        
         .content {
-            flex: 1;
-            padding: 20px;
-            margin-top: 56px; /* Add top margin to avoid content being hidden behind the fixed navbar */
+            flex: 1; /* Esto hará que el contenido se estire para ocupar el espacio restante entre el cuerpo y el pie de página */
         }
 
         .footer {
@@ -24,6 +19,7 @@
             padding: 20px 0;
             text-align: center;
             width: 100%;
+            margin-top: auto !important;
         }
 
         .footer-container {
@@ -61,24 +57,6 @@
 
         .footer-section ul li a:hover {
             text-decoration: underline;
-        }
-
-        .social-icons {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .social-icons a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .social-icons a:hover {
-            color: #ff6347;
         }
 
         .footer-bottom {
@@ -133,6 +111,9 @@
 
         .footer .footer-section {
             margin-bottom: 1.5rem;
+        }
+        h2 {
+            margin-top: 20px; /* Ajusta este valor según tus necesidades */
         }
     </style>
 </head>
@@ -189,7 +170,6 @@
         </form>
     </div>
 
-    <!-- Modales para Editar y Eliminar Item -->
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -228,7 +208,7 @@
             </div>
         </div>
     </div>
-<footer class="footer mt-5">
+    <footer class="footer mt-5">
         <div class="footer-container">
             <div class="col-md-4 mb-4">
                 <h4>Enlaces Rápidos</h4>
